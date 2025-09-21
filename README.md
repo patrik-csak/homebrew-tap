@@ -1,10 +1,21 @@
-# Patrik-csak Tap
+# Patrik Csak’s Homebrew Tap
+
+## Formulae
+
+- [auto-terminal-profile](https://github.com/patrik-csak/auto-terminal-profile)
 
 ## How do I install these formulae?
 
-`brew install patrik-csak/tap/<formula>`
+```shell
+brew install patrik-csak/tap/<formula>
+```
 
-Or `brew tap patrik-csak/tap` and then `brew install <formula>`.
+Or:
+
+```shell
+brew tap patrik-csak/tap
+brew install <formula>
+```
 
 Or, in a `brew bundle` `Brewfile`:
 
