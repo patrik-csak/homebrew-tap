@@ -1,8 +1,8 @@
 class AutoTerminalProfile < Formula
   desc "Automatically switch Terminal profiles with macOS dark/light mode"
   homepage "https://github.com/patrik-csak/auto-terminal-profile"
-  url "https://github.com/patrik-csak/auto-terminal-profile/archive/refs/tags/v7.0.0.tar.gz"
-  sha256 "7f056da783f0924c5d7b33ec4a1469a76ae735772d7e06be667a3e9572ea3811"
+  url "https://github.com/patrik-csak/auto-terminal-profile/archive/refs/tags/v7.0.1.tar.gz"
+  sha256 "f606d6bed66631066763bf51981151a4f5dbd752df74cdbcbf1f9fb31be44813"
   license "MIT"
 
   depends_on "cormacrelf/tap/dark-notify"
