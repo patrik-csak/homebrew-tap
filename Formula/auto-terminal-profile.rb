@@ -1,11 +1,10 @@
 class AutoTerminalProfile < Formula
   desc "Automatically switch Terminal profiles with macOS dark/light mode"
   homepage "https://github.com/patrik-csak/auto-terminal-profile"
-  url "https://github.com/patrik-csak/auto-terminal-profile/archive/refs/tags/v7.0.1.tar.gz"
-  sha256 "f606d6bed66631066763bf51981151a4f5dbd752df74cdbcbf1f9fb31be44813"
+  url "https://registry.npmjs.org/auto-terminal-profile/-/auto-terminal-profile-8.1.0-0.tgz"
+  sha256 "e998ecbe6295c63698592f8131cc98a6b26362a46af9feb9dc417a27fbfc981a"
   license "MIT"
 
-  depends_on "cormacrelf/tap/dark-notify"
   depends_on :macos
   depends_on "node"
 
@@ -14,12 +13,11 @@ class AutoTerminalProfile < Formula
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
+  # TODO: Add test
+  # https://docs.brew.sh/Formula-Cookbook#add-a-test-to-the-formula
+
   service do
-    run [
-      Formula["cormacrelf/tap/dark-notify"].opt_bin/"dark-notify",
-      "-c",
-      "#{opt_bin}/auto-terminal-profile update $1",
-    ]
+    run [opt_bin/"auto-terminal-profile", "watch"]
     keep_alive successful_exit: true
   end
 end
