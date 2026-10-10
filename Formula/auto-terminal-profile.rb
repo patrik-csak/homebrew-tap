@@ -17,7 +17,10 @@ class AutoTerminalProfile < Formula
   # https://docs.brew.sh/Formula-Cookbook#add-a-test-to-the-formula
 
   service do
-    run [opt_bin/"auto-terminal-profile", "watch"]
-    keep_alive successful_exit: true
+    name = "auto-terminal-profile"
+
+    run [opt_bin/name, "watch"]
+    keep_alive true
+    error_log_path var/"log/#{name}.log"
   end
 end
