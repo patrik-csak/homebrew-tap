@@ -1,8 +1,8 @@
 class AutoTerminalProfile < Formula
   desc "Automatically switch Terminal profiles with macOS dark/light mode"
   homepage "https://github.com/patrik-csak/auto-terminal-profile"
-  url "https://registry.npmjs.org/auto-terminal-profile/-/auto-terminal-profile-8.2.2.tgz"
-  sha256 "ac61ec36152344402dc94d2792f694ca6bc808c324d65d02787845f483bb541c"
+  url "https://registry.npmjs.org/auto-terminal-profile/-/auto-terminal-profile-8.3.1.tgz"
+  sha256 "86dd2dfe63fc8bd6a05272c2f4e99a56f00e75eb8fec1911bedcbcdb648149e1"
   license "MIT"
 
   depends_on :macos
